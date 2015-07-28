@@ -1,0 +1,6 @@
+Bundle "https://github.com/blueshirts/darcula"
+Bundle "benmills/vimux"
+Bundle "scrooloose/nerdcommenter"
+Bundle "jisaacks/GitGutter"
+Bundle "airblade/vim-gitgutter"
+Bundle "tpope/vim-projectionist"

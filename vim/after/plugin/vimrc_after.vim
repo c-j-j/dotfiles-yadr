@@ -9,6 +9,14 @@ if filereadable(expand("~/.vimrc.after"))
   source ~/.vimrc.after
 endif
 
+command! -nargs=0 -bar SaveFile if &modified
+      \|    if empty(bufname('%'))
+        \|        browse confirm write
+        \|    else
+          \|        confirm write
+          \|    endif
+          \|endif
+
 nnoremap <silent> <C-s> :<C-u>SaveFile<CR>
 inoremap <c-s> <Esc><Esc>:SaveFile<CR><Esc>
 

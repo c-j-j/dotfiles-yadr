@@ -53,6 +53,9 @@ let g:projectionist_heuristics = {
 
 map <silent> <Leader>nt :NERDTreeToggle<CR>
 
+let g:loaded_fireplace = 1
+
+set completeopt-=preview
 "Rename highlighted text
 noremap R :%s///gc<left><left><left>
 

@@ -48,15 +48,15 @@ map <D-/> :TComment<CR>
 imap <D-/> <Esc>:TComment<CR>i
 
 " Use numbers to pick the tab you want (like iTerm)
-map <silent> <D-1> :tabn 1<cr>
-map <silent> <D-2> :tabn 2<cr>
-map <silent> <D-3> :tabn 3<cr>
-map <silent> <D-4> :tabn 4<cr>
-map <silent> <D-5> :tabn 5<cr>
-map <silent> <D-6> :tabn 6<cr>
-map <silent> <D-7> :tabn 7<cr>
-map <silent> <D-8> :tabn 8<cr>
-map <silent> <D-9> :tabn 9<cr>
+map <silent> g1 :tabn 1<cr>
+map <silent> g2 :tabn 2<cr>
+map <silent> g3 :tabn 3<cr>
+map <silent> g4 :tabn 4<cr>
+map <silent> g5 :tabn 5<cr>
+map <silent> g6 :tabn 6<cr>
+map <silent> g7 :tabn 7<cr>
+map <silent> g8 :tabn 8<cr>
+map <silent> g9 :tabn 9<cr>
 
 " Resize windows with arrow keys
 nnoremap <D-Up> <C-w>+

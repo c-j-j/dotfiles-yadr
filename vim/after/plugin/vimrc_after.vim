@@ -66,3 +66,11 @@ noremap <silent> <leader><space> :noh<cr>:call clearmatches()<cr>
 
 nnoremap B ^
 nnoremap E $
+
+" highlight trailing whitespace
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd BufRead,InsertLeave * match ExtraWhitespace /\s\+$/
+"
+" " set up highlight group & retain through colorscheme changes
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
